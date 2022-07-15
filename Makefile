@@ -41,7 +41,7 @@ test:
 		@./a.out
 
 norm:
-		@norminette -R CheckDefine *.h
+		@norminette -R CheckDefine *.h bonus/*.h
 		@norminette -R CheckForbiddenSourceHeader $(SRCS) $(B_SRCS)
 
 .PHONY: all clean fclean re bonus norm test
