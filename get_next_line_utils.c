@@ -6,11 +6,12 @@
 /*   By: minabe <minabe@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 16:10:15 by minabe            #+#    #+#             */
-/*   Updated: 2022/07/13 08:18:09 by minabe           ###   ########.fr       */
+/*   Updated: 2022/07/31 17:16:12 by minabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
+#include <stdio.h>
 
 char	*ft_strchr(const char *s, int c)
 {

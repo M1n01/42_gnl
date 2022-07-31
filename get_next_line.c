@@ -6,7 +6,7 @@
 /*   By: minabe <minabe@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 16:20:57 by minabe            #+#    #+#             */
-/*   Updated: 2022/07/13 08:04:12 by minabe           ###   ########.fr       */
+/*   Updated: 2022/07/31 17:41:11 by minabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,7 @@ static char	*get_line(char *save)
 	}
 	else if (find == NULL && *save != '\0')
 	{
-		line = malloc(sizeof(char) * (ft_strlen(save)));
+		line = malloc(sizeof(char) * (ft_strlen(save) + 1));
 		if (line == NULL)
 			return (NULL);
 		ft_strlcpy(line, save, ft_strlen(save) + 1);

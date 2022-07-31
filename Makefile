@@ -40,8 +40,12 @@ test:
 		$(CC) $(CFLAGS) $(SRCS) $(T_SRC)
 		@./a.out
 
+testb:
+		$(CC) $(CFLAGS) $(B_SRCS) $(T_SRC)
+		@./a.out
+
 norm:
 		@norminette -R CheckDefine *.h bonus/*.h
 		@norminette -R CheckForbiddenSourceHeader $(SRCS) $(B_SRCS)
 
-.PHONY: all clean fclean re bonus norm test
+.PHONY: all clean fclean re bonus norm test testb
