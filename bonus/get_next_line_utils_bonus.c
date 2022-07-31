@@ -6,7 +6,7 @@
 /*   By: minabe <minabe@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 16:10:15 by minabe            #+#    #+#             */
-/*   Updated: 2022/07/31 17:28:04 by minabe           ###   ########.fr       */
+/*   Updated: 2022/07/31 18:15:16 by minabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strchr(const char *s, int c)
 	char	*str;
 	char	to_find;
 
-	if (!s)
+	if (s == NULL)
 		return (NULL);
 	str = (char *)s;
 	to_find = (char)c;
